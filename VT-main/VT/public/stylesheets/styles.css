@@ -1,0 +1,177 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+#timeline-dropdown {
+  background-color: #024950; /* Ensure the dropdown background matches the navbar */
+}
+
+
+.gallery {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gallery-row {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.gallery-content {
+  display: flex;
+}
+
+.gallery-row.logos .gallery-content {
+  animation: scroll 15s linear infinite;
+}
+
+.gallery-row.offices .gallery-content {
+  animation: scroll 15s linear infinite;
+}
+
+.gallery-content img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.gallery-row.offices .gallery-content img {
+  height: 150px; /* Adjust height to make office images more prominent */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.client-reviews {
+  margin-bottom: 20px;
+}
+
+.review-box {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 420px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.review-box.visible {
+  opacity: 1;
+}
+
+#prev, #next {
+  cursor: pointer;
+  margin: 0 16px;
+}
+
+.flex.space-x-4 {
+  gap: 16px;
+}
+
+.review-box h3 {
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  font-weight: bold;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.review-box h3 {
+  font-weight: normal;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin: 0;
+}
+
+.review-box h3::before {
+  content: "- ";
+}
+
+.client-reviews .container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  
+}
+#footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  z-index: 1; /* Ensure it is above other elements */
+  transition: opacity 0.3s ease;
+}
+
+footer {
+  margin-top: 0; /* Ensure there's no margin pushing content down */
+  padding: 1rem; /* Adjust padding if needed */
+}
+iframe {
+  margin-bottom: 0;
+}
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.floating-icons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.floating-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.linkedin-icon {
+  width: 60px;
+  height: 56px; /* Smaller size compared to user icon */
+}
+.location-icon {
+  width: 58px;
+  height: 55px;
+   /* Smaller size compared to LinkedIn icon */
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/VT-main/VT/public/stylesheets/styles.css">
+  <style>
+    .globe-container {
+      position: relative;
+      width: 100%;
+      height: 700px;
+    }
+    .globe-loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .globe-error {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: none;
+    }
+    .client-reviews {
+      margin-bottom: 20px;
+    }
+    .footer-container {
+      margin-top: -1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="text-white px-6 py-2 sticky top-0 z-50" style="background-color: #024950;">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between items-center">
+          <div class="flex flex-col items-center mb-2 md:mb-0">
+            <img src="/VT-main/VT/public/images/logo.png" alt="Logo" class="h-16">
+            <span class="text-white font-bold text-sm md:text-base">VALLIKA TECHNOLOGIES</span>
+          </div>
+          <div class="flex flex-wrap justify-center items-center space-x-2 md:space-x-4 text-sm md:text-base">
+            <a href="/VT-main/VT/views/about.html" class="hover:text-gray-400 p-1">ABOUT</a>
+            <a href="/VT-main/VT/views/timeline.html" class="hover:text-gray-400 p-1">TIMELINE</a>
+            <a href="/VT-main/VT/views/ERP.html" class="hover:text-gray-400 p-1">ERP</a>
+            <a href="/VT-main/VT/views/dashboard.html" class="hover:text-gray-400 p-1">DASHBOARD</a>
+            <a href="/VT-main/VT/views/sharedlogic.html" class="hover:text-gray-400 p-1">SHARED LOGIC</a>
+            <a href="/VT-main/VT/views/techstack.html" class="hover:text-gray-400 p-1">TECH STACK</a>
+            <a href="/VT-main/VT/views/achievements.html" class="hover:text-gray-400 p-1">ACHIEVEMENTS</a>
+          </div>
+        </div>
+      </div>  
+    </nav>
+  </header>
+  <section class="gallery">
+    <div class="gallery-row logos">
+      <div class="gallery-content">
+        <img src="/VT-main/VT/public/images/bmsce.png" alt="Logo 1">
+        <img src="/VT-main/VT/public/images/beml.png" alt="Logo 2">
+        <img src="/VT-main/VT/public/images/BIT.png" alt="Logo 3">
+        <img src="/VT-main/VT/public/images/DoCG.png" alt="Logo 4">
+        <img src="/VT-main/VT/public/images/jindal.png" alt="Logo 5">
+        <img src="/VT-main/VT/public/images/JSS.png" alt="Logo 6">
+        <img src="/VT-main/VT/public/images/KERC.png" alt="Logo 7">
+        <img src="/VT-main/VT/public/images/MSRIT.png" alt="Logo 8">
+        <img src="/VT-main/VT/public/images/smvit.png" alt="Logo 9">
+        <img src="/VT-main/VT/public/images/dc.png" alt="Logo 10">
+        <img src="/VT-main/VT/public/images/pes.png" alt="Logo 11">
+        <img src="/VT-main/VT/public/images/kena.png" alt="Logo 12">
+        <img src="/VT-main/VT/public/images/bhel.png" alt="Logo 13">
+        <img src="/VT-main/VT/public/images/ksrtc.png" alt="Logo 14">
+        <img src="/VT-main/VT/public/images/bmsce.png" alt="Logo 1">
+        <img src="/VT-main/VT/public/images/beml.png" alt="Logo 2">
+        <img src="/VT-main/VT/public/images/BIT.png" alt="Logo 3">
+        <img src="/VT-main/VT/public/images/DoCG.png" alt="Logo 4">
+        <img src="/VT-main/VT/public/images/jindal.png" alt="Logo 5">
+        <img src="/VT-main/VT/public/images/JSS.png" alt="Logo 6">
+        <img src="/VT-main/VT/public/images/KERC.png" alt="Logo 7">
+        <img src="/VT-main/VT/public/images/MSRIT.png" alt="Logo 8">
+        <img src="/VT-main/VT/public/images/smvit.png" alt="Logo 9">
+        <img src="/VT-main/VT/public/images/dc.png" alt="Logo 10">
+        <img src="/VT-main/VT/public/images/pes.png" alt="Logo 11">
+        <img src="/VT-main/VT/public/images/kena.png" alt="Logo 12">
+        <img src="/VT-main/VT/public/images/bhel.png" alt="Logo 13">
+        <img src="/VT-main/VT/public/images/ksrtc.png" alt="Logo 14">
+      </div>
+    </div>
+    <div class="gallery-row offices">
+      <div class="gallery-content">
+        <img src="/VT-main/VT/public/images/pic6.jpg" alt="Office 1">
+        <img src="/VT-main/VT/public/images/pic3.jpg" alt="Office 2">
+        <img src="/VT-main/VT/public/images/pic2.jpg" alt="Office 3">
+        <img src="/VT-main/VT/public/images/pic4.jpg" alt="Office 4">
+        <img src="/VT-main/VT/public/images/pic5.jpg" alt="Office 5">
+        <img src="/VT-main/VT/public/images/pic6.jpg" alt="Office 1">
+        <img src="/VT-main/VT/public/images/pic3.jpg" alt="Office 2">
+        <img src="/VT-main/VT/public/images/pic2.jpg" alt="Office 3">
+        <img src="/VT-main/VT/public/images/pic4.jpg" alt="Office 4">
+        <img src="/VT-main/VT/public/images/pic5.jpg" alt="Office 5">
+        <img src="/VT-main/VT/public/images/pic3.jpg" alt="Office 1">
+        <img src="/VT-main/VT/public/images/pic6.jpg" alt="Office 2">
+        <img src="/VT-main/VT/public/images/pic2.jpg" alt="Office 3">
+        <img src="/VT-main/VT/public/images/pic5.jpg" alt="Office 4">
+        <img src="/VT-main/VT/public/images/pic4.jpg" alt="Office 5">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Floating icons -->
+  <div class="floating-icons">
+    <img src="/VT-main/VT/public/images/user.png" alt="User Icon" id="user-icon" class="floating-icon user-icon">
+    <img src="/VT-main/VT/public/images/linkedin.png" alt="LinkedIn Icon" id="linkedin-icon" class="floating-icon linkedin-icon hidden">
+    <img src="/VT-main/VT/public/images/loc.png" alt="Location Icon" id="location-icon" class="floating-icon location-icon hidden">
+  </div>
+
+  <!-- Client Reviews Section -->
+  <section class="client-reviews">
+    <div class="container mx-auto py-6">
+      <h2 class="text-center text-2xl font-bold mb-4">Client Reviews</h2>
+      <div class="flex justify-center items-center space-x-4">
+        <img src="/VT-main/VT/public/images/leftarrow.png" id="prev" class="w-12 h-12 cursor-pointer">
+        <div class="flex space-x-4">
+          <div class="review-box bg-white-200 p-4 rounded w-600 h-200" style="background-color: #024950;">
+            <h3 class="font-bold" style="color: white;">Sumukha Kambaloor</h3>
+            <p style="color: white;">With over two decades of expertise, this company has been a leader in providing tailored ERP solutions. Their commitment to customer satisfaction and attention to detail in CRM and database tuning is unmatched.</p>
+          </div>
+          <div class="review-box bg-green-200 p-4 rounded w-600 h-200">
+            <h3 class="font-bold">Bhavish Kunder</h3>
+            <p>Their software development and testing services are second to none. The team's dedication to ensuring seamless integration and long-term scalability has been crucial for our projects' success.</p>
+          </div>
+          <div class="review-box bg-green-200 p-4 rounded w-600 h-200" style="background-color: #024950;">
+            <h3 class="font-bold" style="color: white;">Ayesha Khouser</h3>
+            <p style="color: white;">Their ERP and CRM systems have significantly improved our operational efficiency. Their responsiveness and in-depth knowledge of database tuning have been invaluable.</p>
+          </div>
+        </div>
+        <img src="/VT-main/VT/public/images/rightarrow.png" id="next" class="w-12 h-12 cursor-pointer">
+      </div>
+    </div>
+  </section>
+  <div class="global-presence">
+    <h2 class="text-center text-2xl font-bold mb-4">Our Global Presence</h2>
+    <div class="globe-container">
+      <iframe id="globe-iframe" src="https://bhavishkunder.github.io/mips/" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="globe-loading">
+        <p>Loading globe...</p>
+        <div class="spinner"></div>
+      </div>
+      <div class="globe-error">
+        <p>Failed to load the globe. Please try again.</p>
+        <button id="reload-globe" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Reload Globe
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="/VT-main/VT/public/scripts/script.js"></script>
+
+  <div class="footer-container">
+    <footer class="bg-gray-800 text-white py-6" id="footer">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 VALLIKA TECHNOLOGIES. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const iframe = document.getElementById('globe-iframe');
+      const loadingIndicator = document.querySelector('.globe-loading');
+      const errorMessage = document.querySelector('.globe-error');
+      const reloadButton = document.getElementById('reload-globe');
+      let retryCount = 0;
+      const maxRetries = 3;
+
+      function loadGlobe() {
+        loadingIndicator.style.display = 'block';
+        errorMessage.style.display = 'none';
+        iframe.style.display = 'none';
+
+        iframe.onload = function() {
+          loadingIndicator.style.display = 'none';
+          iframe.style.display = 'block';
+        };
+
+        iframe.onerror = function() {
+          retryCount++;
+          if (retryCount < maxRetries) {
+            setTimeout(loadGlobe, 1000);
+          } else {
+            loadingIndicator.style.display = 'none';
+            errorMessage.style.display = 'block';
+          }
+        };
+
+        iframe.src = iframe.src;
+      }
+
+      reloadButton.addEventListener('click', function() {
+        retryCount = 0;
+        loadGlobe();
+      });
+
+      loadGlobe();
+    });
+  </script>
+</body>
+</html>
